@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+<title>Automobile</title>
+</head>
+<body>
+    <h1>Automobile</h1>
+   
+        <form method="POST" action="/">
+            <input type="text" name="harp">
+            <button type="submit">SEACH</button>
+        </form>
+
+    <table>
+        <tr>
+            <th><h2>Название</h2></th>
+            <th><h2>Рассход</h2></th>
+            <th><h2>Целидры</h2></th>
+            <th><h2>Объём двигателя</h2></th>
+            <th><h2>Мощность</h2></th>
+            <th><h2>Масса</h2></th>
+            <th><h2>Ускорение</h2></th>
+            <th><h2>Год выпуска</h2></th>
+            <th><h2>Производство</h2></th>
+            <th><h2>Цена</h2></th>
+        </tr>
+        {% for row in automobile %}
+        <tr>
+            <td><h4>{{ row[0] }}</h4></td>
+            <td><h3>{{ row[1] }}</h3></td>
+            <td><h3>{{ row[2] }}</h3></td>
+            <td><h3>{{ row[3] }}</h3></td>
+            <td><h3>{{ row[4] }}</h3></td>
+            <td><h3>{{ row[5] }}</h3></td>
+            <td><h3>{{ row[6] }}</h3></td>
+            <td><h3>{{ row[7] }}</h3></td>
+            <td><h3>{{ row[8] }}</h3></td>
+            <td><h3>{{ row[9] }}</h3></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

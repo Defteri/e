@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+body {
+    background-image: url(../static/pastel-yellow-vignette-concrete-textured-background.jpg);
+    }
+h2,h3{
+    color:black;
+}
+input{
+    background-color: darkgoldenrod;
+}
+button{
+    background-color: aqua;
+}
