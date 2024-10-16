@@ -32,9 +32,10 @@ p1{
 img{
     margin: 6;
 }
-formal{
+form{
     float: right;
     margin-top: 10px;
+    margin-left: auto;
 }
 header{
     display: flex;
