@@ -24,6 +24,7 @@
             <th><h2>Производство</h2></th>
             <th><h2>Цена</h2></th>
         </tr>
+        {% for name, mpg, cylinders, displacement, horsepower, weight, acceleration, model_year, origin, price in automobile %}
         <tr>
             <td><p>{{ name }}</p></td>
             <td><p>{{ mpg }}</p></td>
@@ -36,6 +37,7 @@
             <td><h3>{{ origin }}</h3></td>
             <td><p>{{ price }}</p></td>
         </tr>
+        {% endfor %}
     </table>
 </body>
 </html>
