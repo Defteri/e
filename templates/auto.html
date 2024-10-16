@@ -24,20 +24,18 @@
             <th><h2>Производство</h2></th>
             <th><h2>Цена</h2></th>
         </tr>
-        {% for row in automobile %}
         <tr>
-            <td><p> name </p></td>
-            <td><p>{{ mpg }}</p></td>
-            <td><p>{{ cylinders }}</p></td>
-            <td><p>{{ displacement }}</p></td>
-            <td><p>{{ horsepower }}</p></td>
-            <td><p>{{ weight }}</p></td>
-            <td><h3>{{ acceleration }}</h3></td>
-            <td><h3>{{ model_year }}</h3></td>
-            <td><h3>{{ origin }}</h3></td>
+            <td><p>{{ name }}</p></td>
+            <td><p>{{ row[1] }}</p></td>
+            <td><p>{{ row[2] }}</p></td>
+            <td><p>{{ row[3] }}</p></td>
+            <td><p>{{ row[4] }}</p></td>
+            <td><p>{{ row[5] }}</p></td>
+            <td><h3>{{ row[6] }}</h3></td>
+            <td><h3>{{ row[7] }}</h3></td>
+            <td><h3>{{ row[8] }}</h3></td>
             <td><p>{{ price }}</p></td>
         </tr>
-        {% endfor %}
     </table>
 </body>
 </html>
