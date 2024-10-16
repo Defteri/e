@@ -39,8 +39,7 @@ form{
 header{
     display: flex;
     align-items: center;
-    background-color: white;
-    color: aliceblue;
+    background-color: aliceblue;
     padding: 10px;
     position: sticky;
     top: 0;
