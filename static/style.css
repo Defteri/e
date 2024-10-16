@@ -36,8 +36,9 @@ form{
     float: right;
     margin-top: 10px;
 }
-head{
+header{
     display: flex;
+    align-items: center;
     top: 0;
     z-index: 1000;
 }
