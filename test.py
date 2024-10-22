@@ -5,8 +5,6 @@ app.secret_key='your_secret_key'
 
 @app.route('/', methods=['GET','POST'])
 def hello():
-    if 'username' not in session:
-        return redirect('/login')
     
     automobile=[]
     conn=psycopg2.connect(
