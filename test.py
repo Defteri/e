@@ -5,7 +5,7 @@ app.secret_key='your_secret_key'
 
 @app.route('/', methods=['GET','POST'])
 def hello():
-    
+
     automobile=[]
     conn=psycopg2.connect(
                       host='localhost',
@@ -25,10 +25,12 @@ def hello():
     
     conn.close()    
     return render_template('auto.html', automobile=automobile)
+
 @app.route('/profile')
 def profile():
     if 'username' not in session:
         return redirect('/login')
+    
     username=session['username']
 
     conn=psycopg2.connect(
@@ -46,23 +48,22 @@ def profile():
     if user:
         return render_template('profile.html', user=user)
     else:
-        flash('Ощибка')
+        flash('Ошибка')
         return redirect('/auto')
     
 @app.route('/register', methods=['GET','POST'])
 def register():
-    conn=psycopg2.connect(
-        host='localhost',
-        user='tert',
-        password='Teratra14',
-        dbname='postgres',
-        )
-    cur = conn.cursor()
-
     if request.method=='POST':
         username=request.form['username']
         password=request.form['password']
-
+    
+        conn=psycopg2.connect(
+            host='localhost',
+            user='tert',
+            password='Teratra14',
+            dbname='postgres',
+            )
+        cur = conn.cursor()
         cur.execute("INSERT INTO users (username, password) VALUES (%s, %s);",(username, password))
         conn.commit()
 
