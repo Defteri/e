@@ -68,7 +68,6 @@ header{
     padding: 2px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
 }
 .table-container{
     overflow-x: auto;
