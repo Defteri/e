@@ -48,7 +48,7 @@ header{
     top: 0;
     z-index: 1000;
 }
-a1{
+.style-li{
     background-color: aliceblue;
     color: black;
     border: 1px solid black;
@@ -57,7 +57,7 @@ a1{
     text-decoration: none;
     display: inline-block;
 }
-a1:hover, a1:active {
+.style-li.style-hover:hover, .style-action:active {
     background-color: black;
     color: white;
   }
