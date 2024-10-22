@@ -1,6 +1,6 @@
 table {
     border-collapse:collapse;
-    width: 88%;
+    width: 100%;
     border: 1px solid #000;
     border-top: 8px;
     float: right;
@@ -74,6 +74,7 @@ header{
     overflow-x: auto;
     width: 100%;
 }
+
 
 
 
