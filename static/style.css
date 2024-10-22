@@ -71,7 +71,8 @@ header{
 }
 .table-container{
     overflow-x: auto;
-    width: 50%;
+    overflow-y: auto;
+    width: 100%;
 }
 
 
