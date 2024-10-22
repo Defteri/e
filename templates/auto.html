@@ -11,20 +11,31 @@
     <form method="POST" action="/">
             <input type="text" name="harp">
         </form>
-    </header>
+        {% if session['username'] %}
+            <a href="/profile">
+                <img src="../static/1.png'" alt="profile icon" width="40" height="40">
+                Профиль
+            </a>
+            <a href="/logout">LOGOUT</a>
+        {% else %}
+            <h5><a href="/login">LOGIN</a></h5>
+        <h5><a href="/register" class="register-button">Retij</a></h5>
+        {% endif %}    
+    </header>    
+        <a href="/static/auto1.html">Ttttt</a>
 
-    <table>
+   <table>
         <tr>
-            <th><h2>Марка и модель</h2></th>
-            <th><h2>Расход</h2></th>
-            <th><h2>Цилиндры</h2></th>
-            <th><h2>Объём двигателя</h2></th>
-            <th><h2>Мощность</h2></th>
-            <th><h2>Масса</h2></th>
-            <th><h2>Ускорение</h2></th>
-            <th><h2>Год выпуска</h2></th>
-            <th><h2>Производство</h2></th>
-            <th><h2>Цена</h2></th>
+            <th><h3>Марка и модель</h3></th>
+            <th><h3>Расход</h3></th>
+            <th><h3>Цилиндры</h3></th>
+            <th><h3>Объём двигателя</h3></th>
+            <th><h3>Мощность</h3></th>
+            <th><h3>Масса</h3></th>
+            <th><h3>Ускорение</h3></th>
+            <th><h3>Год выпуска</h3></th>
+            <th><h3>Производство</h3></th>
+            <th><h3>Цена</h3></th>
         </tr>
         {% for name, mpg, cylinders, displacement, horsepower, weight, acceleration, model_year, origin, price in automobile %}
         <tr>
