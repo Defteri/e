@@ -70,6 +70,10 @@ header{
     text-decoration: none;
     display: inline-block;
 }
+.table-container{
+    overflow-x: auto;
+    width: 100%;
+}
 
 
 
