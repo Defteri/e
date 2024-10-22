@@ -1,9 +1,9 @@
 table {
     border-collapse:collapse;
-    width: 80%;
-    border: 1px solid #000;
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 0%);
     border-top: 4px;
-    float: right;
+    float: none;
 }
 th, td{
     border: 1px solid #000;
@@ -71,8 +71,8 @@ header{
 }
 .table-container{
     overflow-x: auto;
-    overflow-y: auto;
     width: 100%;
+    max-width: 100%;
 }
 
 

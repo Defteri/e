@@ -13,7 +13,7 @@
         </form>
         {% if session['username'] %}
             <a href="/profile">
-                <img src="../static/4.png" alt="profile icon" width="40" height="40" class='prof' Профиль></a>
+                <img src="../static/4.png" alt="profile icon" width="40" height="40" class='prof'></a>
             <a href="/logout" class="prof">LOGOUT</a>
         {% else %}
             <a href="/login">LOGIN</a>
@@ -22,13 +22,13 @@
     </header>    
         <a href="/static/auto1.html" class="style-li">Ttttt</a>
 
-        <div class="table-container">
+<div class="table-container">
         <table>
         <tr>
             <th><h4>Марка и модель</h4></th>
             <th><h3>Расход</h3></th>
             <th><h3>Цилиндры</h3></th>
-            <th><h3>Объём двигателя</h3></th>
+            <th><h4>Объём двигателя</h4></th>
             <th><h3>Мощность</h3></th>
             <th><h3>Масса</h3></th>
             <th><h3>Ускорение</h3></th>
@@ -51,6 +51,6 @@
         </tr>
         {% endfor %}
     </table>
-    </div>
+</div>
 </body>
 </html>
