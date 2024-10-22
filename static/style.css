@@ -57,7 +57,7 @@ header{
     text-decoration: none;
     display: inline-block;
 }
-.style-li.style-hover:hover, .style-action:active {
+.style-li:hover, .style-li:active {
     background-color: black;
     color: white;
   }
