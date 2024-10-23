@@ -72,6 +72,14 @@ header{
     overflow-x: auto;
     width: 100%;
 }
+.set{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid black;
+    padding: 1px 20px;
+    text-align: center;
+    text-decoration: none;
+}
 
 
 
