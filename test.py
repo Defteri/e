@@ -18,7 +18,7 @@ def hello():
         cur=conn.cursor()
         
         harp=request.form['harp']
-        cur.execute("SELECT * FROM automobile WHERE name LIKE %s;",('%' + harp + '%',))
+        cur.execute("SELECT * FROM automobile WHERE name LIKE %s OR origin LIKE %s;""",('%' + harp + '%','%' + harp + '%'))
         automobile=cur.fetchall()
 
         cur.close()

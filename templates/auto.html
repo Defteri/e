@@ -6,19 +6,25 @@
 </head>
 <body>
     <header>
+        <div class="logo-container">
     <img src="../static/3.png" width="120" height="70"> <p1>AUTOMOBILE</p1> <img src="../static/2.png" width="120" height="70">
-
+</div>
     <form method="POST" action="/">
-            <input type="text" name="harp">
-        </form>
+        <p><input type="text" name="harp"></p>
+    </form>
+
+    <div class="profile-container">
         {% if session['username'] %}
-            <a href="/profile">
-                <img src="../static/4.png" alt="profile icon" width="40" height="40" class='prof'></a>
+            <div>
+                <a href="/profile">
+                <img src="../static/4.png" alt="profile icon" width="40" height="40" class='prof'>
+            </a>
             <a href="/logout" class="set">LOGOUT</a>
         {% else %}
             <a href="/login" class='set'>LOGIN</a>
-        <a href="/register"class='set'>Retij</a>
-        {% endif %}    
+            <a href="/register"class='set'>REGISTER</a>
+        {% endif %}
+    </div>    
     </header>    
         <a href="/static/auto1.html" class="style-li">Ttttt</a>
 

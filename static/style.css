@@ -4,6 +4,10 @@ table {
     border: 1px solid #000;
     margin: 0;
 }
+.logo-container{
+    display: flex;
+    flex-grow: 1;
+}
 th, td{
     border: 1px solid #000;
     padding: 7px;
@@ -41,8 +45,9 @@ form{
 }
 header{
     display: flex;
+    justify-content: space-between;
     background-color: aliceblue;
-    padding: 10px;
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -62,11 +67,21 @@ header{
   }
 .prof{
     background-color: aliceblue;
-    color: black;
-    border: 1px solid black;
+    color: #000;
+    border:5px black;
     padding: 2px 10px;
     text-align: center;
     text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 15px;
+}
+.profile-container{
+    display: flex;
+    align-items:center;
+}
+.profile-container{
+    margin-right: 10px;
 }
 .table-container{
     overflow-x: auto;
@@ -76,9 +91,16 @@ header{
     background-color: aliceblue;
     color: black;
     border: 1px solid black;
-    padding: 5px 50px;
+    padding: 5px 20px;
     text-align: center;
     text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.set:hover {
+    opacity: 0.8;
+    border-color: #000;
 }
 
 
