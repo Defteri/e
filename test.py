@@ -107,7 +107,7 @@ def login():
 def logout():
    session.pop('username', None)
    flash("Вы вышли из аккаунта")
-   return redirect('/login')
+   return redirect('/')
 
 if __name__ == "__main__":
     app.run(debug=True,host='0.0.0.0', port=80)
